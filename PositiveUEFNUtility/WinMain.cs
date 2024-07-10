@@ -21,5 +21,23 @@ namespace PositiveUEFNUtility
         {
 
         }
+
+        private void buttonOpenOfficialDocument_Click(object sender, EventArgs e)
+        {
+            string url = "https://dev.epicgames.com/documentation/ja-jp/uefn/unreal-editor-for-fortnite-documentation";
+            PositiveUtility.OpenUrl(url);
+        }
+
+        private void buttonOpenForumLeaning_Click(object sender, EventArgs e)
+        {
+            string url = "https://dev.epicgames.com/community/fortnite/learning?sort_by=first_published_at&source=community";
+            PositiveUtility.OpenUrl(url);
+        }
+
+        private void buttonShowWinGetOutlinerActorLabel_Click(object sender, EventArgs e)
+        {
+            WinGetOutlinerActorLabel win = new WinGetOutlinerActorLabel();
+            win.Show();
+        }
     }
 }
