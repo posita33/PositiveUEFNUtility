@@ -1,2 +1,21 @@
-# PositiveUEFNUtility
- This is a useful tool created for UEFN.
+# Positive UEFN Utility
+
+![](./Images/Header_positiveUEFNUtility.png)
+
+UEFNではEditor Utility Widgetが使用できません。UEFNから取得できるテキスト情報を利用したツールを作成しました。
+
+![](./Images/Image_PositiveUEFNUtility.png)
+
+## 「.NET Framework 4.7.2ランタイム」をインストール
+
+「Positive UEFN Utility」は「.NET Framework 4.7.2」で開発しています。
+「.NET Framework 4.7.2」がインストールされていないと起動しません。「.NET Framework 4.7.2ランタイム」をインストールしてください。
+
+[.NET Framework 4.7.2 のダウンロード](https://dotnet.microsoft.com/ja-jp/download/dotnet-framework/net472)
+
+## 使用方法はForumで
+
+Forumに使用方法ページを作成しました。
+使用方法ページを随時更新します。
+
+[ForumのPositive UEFN Utilityの使用方法ページ](https://dev.epicgames.com/community/learning/tutorials/vw41/fortnite-positive-uefn-utility)
