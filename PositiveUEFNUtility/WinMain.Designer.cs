@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WinMain));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.buttonOpenOfficialDocument = new System.Windows.Forms.Button();
             this.buttonOpenForumLeaning = new System.Windows.Forms.Button();
+            this.buttonOpenOfficialDocument = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonShowWinGetOutlinerActorLabel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -50,16 +51,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "URLボタン";
             // 
-            // buttonOpenOfficialDocument
-            // 
-            this.buttonOpenOfficialDocument.Location = new System.Drawing.Point(7, 19);
-            this.buttonOpenOfficialDocument.Name = "buttonOpenOfficialDocument";
-            this.buttonOpenOfficialDocument.Size = new System.Drawing.Size(107, 23);
-            this.buttonOpenOfficialDocument.TabIndex = 0;
-            this.buttonOpenOfficialDocument.Text = "公式ドキュメント";
-            this.buttonOpenOfficialDocument.UseVisualStyleBackColor = true;
-            this.buttonOpenOfficialDocument.Click += new System.EventHandler(this.buttonOpenOfficialDocument_Click);
-            // 
             // buttonOpenForumLeaning
             // 
             this.buttonOpenForumLeaning.Location = new System.Drawing.Point(120, 19);
@@ -69,6 +60,16 @@
             this.buttonOpenForumLeaning.Text = "Forum(ラーニング)";
             this.buttonOpenForumLeaning.UseVisualStyleBackColor = true;
             this.buttonOpenForumLeaning.Click += new System.EventHandler(this.buttonOpenForumLeaning_Click);
+            // 
+            // buttonOpenOfficialDocument
+            // 
+            this.buttonOpenOfficialDocument.Location = new System.Drawing.Point(7, 19);
+            this.buttonOpenOfficialDocument.Name = "buttonOpenOfficialDocument";
+            this.buttonOpenOfficialDocument.Size = new System.Drawing.Size(107, 23);
+            this.buttonOpenOfficialDocument.TabIndex = 0;
+            this.buttonOpenOfficialDocument.Text = "公式ドキュメント";
+            this.buttonOpenOfficialDocument.UseVisualStyleBackColor = true;
+            this.buttonOpenOfficialDocument.Click += new System.EventHandler(this.buttonOpenOfficialDocument_Click);
             // 
             // groupBox2
             // 
@@ -102,6 +103,7 @@
             this.ClientSize = new System.Drawing.Size(380, 280);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WinMain";
             this.Text = "PositiveUEFNUtility";
             this.Load += new System.EventHandler(this.WinMain_Load);
