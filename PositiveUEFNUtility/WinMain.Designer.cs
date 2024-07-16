@@ -34,6 +34,7 @@
             this.buttonOpenOfficialDocument = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonShowWinGetOutlinerActorLabel = new System.Windows.Forms.Button();
+            this.buttonShowWinConvertTextAlignDuplicate = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +77,7 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.buttonShowWinConvertTextAlignDuplicate);
             this.groupBox2.Controls.Add(this.buttonShowWinGetOutlinerActorLabel);
             this.groupBox2.Location = new System.Drawing.Point(13, 82);
             this.groupBox2.Name = "groupBox2";
@@ -95,6 +97,18 @@
             this.buttonShowWinGetOutlinerActorLabel.Text = "選択しているActorのLabelを取得する";
             this.buttonShowWinGetOutlinerActorLabel.UseVisualStyleBackColor = true;
             this.buttonShowWinGetOutlinerActorLabel.Click += new System.EventHandler(this.buttonShowWinGetOutlinerActorLabel_Click);
+            // 
+            // buttonShowWinConvertTextAlignDuplicate
+            // 
+            this.buttonShowWinConvertTextAlignDuplicate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonShowWinConvertTextAlignDuplicate.Location = new System.Drawing.Point(7, 47);
+            this.buttonShowWinConvertTextAlignDuplicate.Name = "buttonShowWinConvertTextAlignDuplicate";
+            this.buttonShowWinConvertTextAlignDuplicate.Size = new System.Drawing.Size(342, 23);
+            this.buttonShowWinConvertTextAlignDuplicate.TabIndex = 3;
+            this.buttonShowWinConvertTextAlignDuplicate.Text = "整列したActorを複製する";
+            this.buttonShowWinConvertTextAlignDuplicate.UseVisualStyleBackColor = true;
+            this.buttonShowWinConvertTextAlignDuplicate.Click += new System.EventHandler(this.buttonShowWinConvertTextAlignDuplicate_Click);
             // 
             // WinMain
             // 
@@ -120,6 +134,7 @@
         private System.Windows.Forms.Button buttonOpenForumLeaning;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button buttonShowWinGetOutlinerActorLabel;
+        private System.Windows.Forms.Button buttonShowWinConvertTextAlignDuplicate;
     }
 }
 

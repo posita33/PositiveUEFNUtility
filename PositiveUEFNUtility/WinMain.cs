@@ -47,5 +47,16 @@ namespace PositiveUEFNUtility
             WinGetOutlinerActorLabel win = new WinGetOutlinerActorLabel();
             win.Show();
         }
+
+        /// <summary>
+        /// 整列したActorを複製する
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonShowWinConvertTextAlignDuplicate_Click(object sender, EventArgs e)
+        {
+            WinConvertTextAlignDuplicate win = new WinConvertTextAlignDuplicate();
+            win.Show();
+        }
     }
 }

@@ -86,7 +86,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(433, 27);
+            this.label2.Location = new System.Drawing.Point(403, 27);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 12);
             this.label2.TabIndex = 4;
