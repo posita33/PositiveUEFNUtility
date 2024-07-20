@@ -80,5 +80,27 @@ namespace PositiveUEFNUtility
             string url = "https://discord.gg/WHv8egZnhy";
             PositiveUtility.OpenUrl(url);
         }
+
+        /// <summary>
+        /// GitHubのリポジトリに移動するボタン
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonGitHub_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/posita33/PositiveUEFNUtility";
+            PositiveUtility.OpenUrl(url);
+        }
+
+        /// <summary>
+        /// Discordの招待URL
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonDiscord_Click(object sender, EventArgs e)
+        {
+            string url = "https://discord.gg/WHv8egZnhy";
+            PositiveUtility.OpenUrl(url);
+        }
     }
 }
