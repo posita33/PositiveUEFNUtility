@@ -58,5 +58,27 @@ namespace PositiveUEFNUtility
             WinConvertTextAlignDuplicate win = new WinConvertTextAlignDuplicate();
             win.Show();
         }
+
+        /// <summary>
+        /// 使い方のForumページを開く
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ToolStripMenuItemDocument_Click(object sender, EventArgs e)
+        {
+            string url = "https://dev.epicgames.com/community/learning/tutorials/vw41/fortnite-positive-uefn-utility";
+            PositiveUtility.OpenUrl(url);
+        }
+
+        /// <summary>
+        /// Discordの招待URL
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ToolStripMenuItemDiscord_Click(object sender, EventArgs e)
+        {
+            string url = "https://discord.gg/WHv8egZnhy";
+            PositiveUtility.OpenUrl(url);
+        }
     }
 }

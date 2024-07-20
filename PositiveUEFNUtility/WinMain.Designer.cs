@@ -33,10 +33,15 @@
             this.buttonOpenForumLeaning = new System.Windows.Forms.Button();
             this.buttonOpenOfficialDocument = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.buttonShowWinGetOutlinerActorLabel = new System.Windows.Forms.Button();
             this.buttonShowWinConvertTextAlignDuplicate = new System.Windows.Forms.Button();
+            this.buttonShowWinGetOutlinerActorLabel = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemDocument = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItemDiscord = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -45,7 +50,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.buttonOpenForumLeaning);
             this.groupBox1.Controls.Add(this.buttonOpenOfficialDocument);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Location = new System.Drawing.Point(13, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(355, 62);
             this.groupBox1.TabIndex = 0;
@@ -79,24 +84,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.buttonShowWinConvertTextAlignDuplicate);
             this.groupBox2.Controls.Add(this.buttonShowWinGetOutlinerActorLabel);
-            this.groupBox2.Location = new System.Drawing.Point(13, 82);
+            this.groupBox2.Location = new System.Drawing.Point(13, 95);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(355, 186);
+            this.groupBox2.Size = new System.Drawing.Size(355, 207);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "便利ツール";
-            // 
-            // buttonShowWinGetOutlinerActorLabel
-            // 
-            this.buttonShowWinGetOutlinerActorLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonShowWinGetOutlinerActorLabel.Location = new System.Drawing.Point(7, 18);
-            this.buttonShowWinGetOutlinerActorLabel.Name = "buttonShowWinGetOutlinerActorLabel";
-            this.buttonShowWinGetOutlinerActorLabel.Size = new System.Drawing.Size(342, 23);
-            this.buttonShowWinGetOutlinerActorLabel.TabIndex = 2;
-            this.buttonShowWinGetOutlinerActorLabel.Text = "選択しているActorのLabelを取得する";
-            this.buttonShowWinGetOutlinerActorLabel.UseVisualStyleBackColor = true;
-            this.buttonShowWinGetOutlinerActorLabel.Click += new System.EventHandler(this.buttonShowWinGetOutlinerActorLabel_Click);
             // 
             // buttonShowWinConvertTextAlignDuplicate
             // 
@@ -110,11 +103,57 @@
             this.buttonShowWinConvertTextAlignDuplicate.UseVisualStyleBackColor = true;
             this.buttonShowWinConvertTextAlignDuplicate.Click += new System.EventHandler(this.buttonShowWinConvertTextAlignDuplicate_Click);
             // 
+            // buttonShowWinGetOutlinerActorLabel
+            // 
+            this.buttonShowWinGetOutlinerActorLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonShowWinGetOutlinerActorLabel.Location = new System.Drawing.Point(7, 18);
+            this.buttonShowWinGetOutlinerActorLabel.Name = "buttonShowWinGetOutlinerActorLabel";
+            this.buttonShowWinGetOutlinerActorLabel.Size = new System.Drawing.Size(342, 23);
+            this.buttonShowWinGetOutlinerActorLabel.TabIndex = 2;
+            this.buttonShowWinGetOutlinerActorLabel.Text = "選択しているActorのLabelを取得する";
+            this.buttonShowWinGetOutlinerActorLabel.UseVisualStyleBackColor = true;
+            this.buttonShowWinGetOutlinerActorLabel.Click += new System.EventHandler(this.buttonShowWinGetOutlinerActorLabel_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(380, 24);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemDocument,
+            this.ToolStripMenuItemDiscord});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // ToolStripMenuItemDocument
+            // 
+            this.ToolStripMenuItemDocument.Name = "ToolStripMenuItemDocument";
+            this.ToolStripMenuItemDocument.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemDocument.Text = "使い方";
+            this.ToolStripMenuItemDocument.Click += new System.EventHandler(this.ToolStripMenuItemDocument_Click);
+            // 
+            // ToolStripMenuItemDiscord
+            // 
+            this.ToolStripMenuItemDiscord.Name = "ToolStripMenuItemDiscord";
+            this.ToolStripMenuItemDiscord.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemDiscord.Text = "Discord";
+            this.ToolStripMenuItemDiscord.Click += new System.EventHandler(this.ToolStripMenuItemDiscord_Click);
+            // 
             // WinMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(380, 280);
+            this.ClientSize = new System.Drawing.Size(380, 314);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -123,7 +162,10 @@
             this.Load += new System.EventHandler(this.WinMain_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -135,6 +177,10 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button buttonShowWinGetOutlinerActorLabel;
         private System.Windows.Forms.Button buttonShowWinConvertTextAlignDuplicate;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemDocument;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemDiscord;
     }
 }
 
