@@ -102,5 +102,16 @@ namespace PositiveUEFNUtility
             string url = "https://discord.gg/WHv8egZnhy";
             PositiveUtility.OpenUrl(url);
         }
+
+        /// <summary>
+        /// 使い方のForumページを開く
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonDocument_Click(object sender, EventArgs e)
+        {
+            string url = "https://dev.epicgames.com/community/learning/tutorials/vw41/fortnite-positive-uefn-utility";
+            PositiveUtility.OpenUrl(url);
+        }
     }
 }

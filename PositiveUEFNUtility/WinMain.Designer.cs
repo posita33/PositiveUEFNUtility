@@ -41,6 +41,7 @@
             this.ToolStripMenuItemDiscord = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonGitHub = new System.Windows.Forms.Button();
             this.buttonDiscord = new System.Windows.Forms.Button();
+            this.buttonDocument = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -50,6 +51,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.buttonDocument);
             this.groupBox1.Controls.Add(this.buttonDiscord);
             this.groupBox1.Controls.Add(this.buttonGitHub);
             this.groupBox1.Controls.Add(this.buttonOpenForumLeaning);
@@ -66,7 +68,7 @@
             this.buttonOpenForumLeaning.Location = new System.Drawing.Point(119, 47);
             this.buttonOpenForumLeaning.Name = "buttonOpenForumLeaning";
             this.buttonOpenForumLeaning.Size = new System.Drawing.Size(107, 23);
-            this.buttonOpenForumLeaning.TabIndex = 3;
+            this.buttonOpenForumLeaning.TabIndex = 4;
             this.buttonOpenForumLeaning.Text = "Forum(ラーニング)";
             this.buttonOpenForumLeaning.UseVisualStyleBackColor = true;
             this.buttonOpenForumLeaning.Click += new System.EventHandler(this.buttonOpenForumLeaning_Click);
@@ -76,7 +78,7 @@
             this.buttonOpenOfficialDocument.Location = new System.Drawing.Point(6, 47);
             this.buttonOpenOfficialDocument.Name = "buttonOpenOfficialDocument";
             this.buttonOpenOfficialDocument.Size = new System.Drawing.Size(107, 23);
-            this.buttonOpenOfficialDocument.TabIndex = 2;
+            this.buttonOpenOfficialDocument.TabIndex = 3;
             this.buttonOpenOfficialDocument.Text = "公式ドキュメント";
             this.buttonOpenOfficialDocument.UseVisualStyleBackColor = true;
             this.buttonOpenOfficialDocument.Click += new System.EventHandler(this.buttonOpenOfficialDocument_Click);
@@ -141,14 +143,14 @@
             // ToolStripMenuItemDocument
             // 
             this.ToolStripMenuItemDocument.Name = "ToolStripMenuItemDocument";
-            this.ToolStripMenuItemDocument.Size = new System.Drawing.Size(114, 22);
+            this.ToolStripMenuItemDocument.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItemDocument.Text = "使い方";
             this.ToolStripMenuItemDocument.Click += new System.EventHandler(this.ToolStripMenuItemDocument_Click);
             // 
             // ToolStripMenuItemDiscord
             // 
             this.ToolStripMenuItemDiscord.Name = "ToolStripMenuItemDiscord";
-            this.ToolStripMenuItemDiscord.Size = new System.Drawing.Size(114, 22);
+            this.ToolStripMenuItemDiscord.Size = new System.Drawing.Size(180, 22);
             this.ToolStripMenuItemDiscord.Text = "Discord";
             this.ToolStripMenuItemDiscord.Click += new System.EventHandler(this.ToolStripMenuItemDiscord_Click);
             // 
@@ -171,6 +173,16 @@
             this.buttonDiscord.Text = "Discord";
             this.buttonDiscord.UseVisualStyleBackColor = true;
             this.buttonDiscord.Click += new System.EventHandler(this.buttonDiscord_Click);
+            // 
+            // buttonDocument
+            // 
+            this.buttonDocument.Location = new System.Drawing.Point(233, 18);
+            this.buttonDocument.Name = "buttonDocument";
+            this.buttonDocument.Size = new System.Drawing.Size(107, 23);
+            this.buttonDocument.TabIndex = 2;
+            this.buttonDocument.Text = "使い方";
+            this.buttonDocument.UseVisualStyleBackColor = true;
+            this.buttonDocument.Click += new System.EventHandler(this.buttonDocument_Click);
             // 
             // WinMain
             // 
@@ -207,6 +219,7 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemDiscord;
         private System.Windows.Forms.Button buttonDiscord;
         private System.Windows.Forms.Button buttonGitHub;
+        private System.Windows.Forms.Button buttonDocument;
     }
 }
 
