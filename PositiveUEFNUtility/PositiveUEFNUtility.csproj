@@ -70,6 +70,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PositiveUtility.cs" />
+    <Compile Include="Vector3.cs" />
+    <Compile Include="WinConvertTextAlignDuplicate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinConvertTextAlignDuplicate.Designer.cs">
+      <DependentUpon>WinConvertTextAlignDuplicate.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinGetOutlinerActorLabel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +100,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="WinConvertTextAlignDuplicate.resx">
+      <DependentUpon>WinConvertTextAlignDuplicate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinGetOutlinerActorLabel.resx">
       <DependentUpon>WinGetOutlinerActorLabel.cs</DependentUpon>
     </EmbeddedResource>

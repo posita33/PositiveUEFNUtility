@@ -8,22 +8,282 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PositiveUEFNUtility.Properties
-{
-
-
+namespace PositiveUEFNUtility.Properties {
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.7.0.0")]
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
-        public static Settings Default
-        {
-            get
-            {
+        
+        public static Settings Default {
+            get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal StartPositionX {
+            get {
+                return ((decimal)(this["StartPositionX"]));
+            }
+            set {
+                this["StartPositionX"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal StartPositionY {
+            get {
+                return ((decimal)(this["StartPositionY"]));
+            }
+            set {
+                this["StartPositionY"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public decimal StartPositionZ {
+            get {
+                return ((decimal)(this["StartPositionZ"]));
+            }
+            set {
+                this["StartPositionZ"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool CheckLocationX {
+            get {
+                return ((bool)(this["CheckLocationX"]));
+            }
+            set {
+                this["CheckLocationX"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool CheckLocationY {
+            get {
+                return ((bool)(this["CheckLocationY"]));
+            }
+            set {
+                this["CheckLocationY"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool CheckLocationZ {
+            get {
+                return ((bool)(this["CheckLocationZ"]));
+            }
+            set {
+                this["CheckLocationZ"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CheckLocationXRondom {
+            get {
+                return ((bool)(this["CheckLocationXRondom"]));
+            }
+            set {
+                this["CheckLocationXRondom"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CheckLocationYRondom {
+            get {
+                return ((bool)(this["CheckLocationYRondom"]));
+            }
+            set {
+                this["CheckLocationYRondom"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CheckLocationZRondom {
+            get {
+                return ((bool)(this["CheckLocationZRondom"]));
+            }
+            set {
+                this["CheckLocationZRondom"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public decimal LocationXCount {
+            get {
+                return ((decimal)(this["LocationXCount"]));
+            }
+            set {
+                this["LocationXCount"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public decimal LocationYCount {
+            get {
+                return ((decimal)(this["LocationYCount"]));
+            }
+            set {
+                this["LocationYCount"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public decimal LocationZCount {
+            get {
+                return ((decimal)(this["LocationZCount"]));
+            }
+            set {
+                this["LocationZCount"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("200")]
+        public decimal LocationXOffsetDistance {
+            get {
+                return ((decimal)(this["LocationXOffsetDistance"]));
+            }
+            set {
+                this["LocationXOffsetDistance"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("200")]
+        public decimal LocationYOffsetDistance {
+            get {
+                return ((decimal)(this["LocationYOffsetDistance"]));
+            }
+            set {
+                this["LocationYOffsetDistance"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("200")]
+        public decimal LocationZOffsetDistance {
+            get {
+                return ((decimal)(this["LocationZOffsetDistance"]));
+            }
+            set {
+                this["LocationZOffsetDistance"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-15")]
+        public decimal LocationXRandomMin {
+            get {
+                return ((decimal)(this["LocationXRandomMin"]));
+            }
+            set {
+                this["LocationXRandomMin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("15")]
+        public decimal LocationXRandomMax {
+            get {
+                return ((decimal)(this["LocationXRandomMax"]));
+            }
+            set {
+                this["LocationXRandomMax"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-15")]
+        public decimal LocationYRandomMin {
+            get {
+                return ((decimal)(this["LocationYRandomMin"]));
+            }
+            set {
+                this["LocationYRandomMin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("15")]
+        public decimal LocationYRandomMax {
+            get {
+                return ((decimal)(this["LocationYRandomMax"]));
+            }
+            set {
+                this["LocationYRandomMax"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("-15")]
+        public decimal LocationZRandomMin {
+            get {
+                return ((decimal)(this["LocationZRandomMin"]));
+            }
+            set {
+                this["LocationZRandomMin"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("15")]
+        public decimal LocationZRandomMax {
+            get {
+                return ((decimal)(this["LocationZRandomMax"]));
+            }
+            set {
+                this["LocationZRandomMax"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool AlignDuplicateClipboardCopy {
+            get {
+                return ((bool)(this["AlignDuplicateClipboardCopy"]));
+            }
+            set {
+                this["AlignDuplicateClipboardCopy"] = value;
             }
         }
     }

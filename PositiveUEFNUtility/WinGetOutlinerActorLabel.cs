@@ -1,12 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PositiveUEFNUtility
@@ -18,6 +12,11 @@ namespace PositiveUEFNUtility
             InitializeComponent();
         }
 
+        /// <summary>
+        /// UEFNのテキスト情報からActorLableの一覧に変換します。
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonConvert_Click(object sender, EventArgs e)
         {
             if(textBoxSrcText.Text == string.Empty)
@@ -27,6 +26,11 @@ namespace PositiveUEFNUtility
             convertActorLables(textBoxSrcText.Text);
         }
 
+        /// <summary>
+        /// クリックボードのテキスト情報を変換して、クリップボードにActorLableの一覧を設定します
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonConvertClipboard_Click(object sender, EventArgs e)
         {
             // クリップボードからテキストを取得
@@ -45,6 +49,10 @@ namespace PositiveUEFNUtility
             Clipboard.SetText(textBoxDestText.Text);
         }
 
+        /// <summary>
+        /// UEFNのテキスト情報からActorLabelを一行ずつの文字列に変換します。
+        /// </summary>
+        /// <param name="text">UEFNのテキスト情報</param>
         private void convertActorLables(string text)
         {
             // Actor Labelをリストに格納する
@@ -53,9 +61,15 @@ namespace PositiveUEFNUtility
             // リストの情報を1行ずつの文字列に変換する
             textBoxDestText.Text = string.Join(Environment.NewLine, actorLabels);
         }
-
+        
+        /// <summary>
+        /// テキスト情報からActorLabelの情報を抽出します。
+        /// </summary>
+        /// <param name="text">UEFNのテキスト情報</param>
+        /// <returns>ActorLabelの一覧</returns>
         private List<string> extractActorLabels(string text)
         {
+            // 正規表現でActorLable情報が書かれた行を抽出する
             string pattern = @"ActorLabel=""([^""]+)""";
             Regex regex = new Regex(pattern);
             MatchCollection matches = regex.Matches(textBoxSrcText.Text);
@@ -70,6 +84,28 @@ namespace PositiveUEFNUtility
             actorLabels.Sort();
 
             return actorLabels;
+        }
+
+        /// <summary>
+        /// 使い方のForumページを開く
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ToolStripMenuItemDocument_Click(object sender, EventArgs e)
+        {
+            string url = "https://dev.epicgames.com/community/learning/tutorials/vw41/fortnite-positive-uefn-utility";
+            PositiveUtility.OpenUrl(url);
+        }
+
+        /// <summary>
+        /// Discordの招待URL
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ToolStripMenuItemDiscord_Click(object sender, EventArgs e)
+        {
+            string url = "https://discord.gg/WHv8egZnhy";
+            PositiveUtility.OpenUrl(url);
         }
     }
 }
