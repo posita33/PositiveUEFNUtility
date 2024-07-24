@@ -77,6 +77,12 @@
     <Compile Include="WinConvertTextAlignDuplicate.Designer.cs">
       <DependentUpon>WinConvertTextAlignDuplicate.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinCSVToVerseStructure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinCSVToVerseStructure.Designer.cs">
+      <DependentUpon>WinCSVToVerseStructure.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinGetOutlinerActorLabel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </Compile>
     <EmbeddedResource Include="WinConvertTextAlignDuplicate.resx">
       <DependentUpon>WinConvertTextAlignDuplicate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinCSVToVerseStructure.resx">
+      <DependentUpon>WinCSVToVerseStructure.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinGetOutlinerActorLabel.resx">
       <DependentUpon>WinGetOutlinerActorLabel.cs</DependentUpon>

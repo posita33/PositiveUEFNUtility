@@ -286,5 +286,17 @@ namespace PositiveUEFNUtility.Properties {
                 this["AlignDuplicateClipboardCopy"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string CSVToVerseStructureVariable {
+            get {
+                return ((string)(this["CSVToVerseStructureVariable"]));
+            }
+            set {
+                this["CSVToVerseStructureVariable"] = value;
+            }
+        }
     }
 }

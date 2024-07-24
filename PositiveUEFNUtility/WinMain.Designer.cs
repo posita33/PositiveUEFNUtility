@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WinMain));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonDocument = new System.Windows.Forms.Button();
+            this.buttonDiscord = new System.Windows.Forms.Button();
+            this.buttonGitHub = new System.Windows.Forms.Button();
             this.buttonOpenForumLeaning = new System.Windows.Forms.Button();
             this.buttonOpenOfficialDocument = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -39,9 +42,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemDocument = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItemDiscord = new System.Windows.Forms.ToolStripMenuItem();
-            this.buttonGitHub = new System.Windows.Forms.Button();
-            this.buttonDiscord = new System.Windows.Forms.Button();
-            this.buttonDocument = new System.Windows.Forms.Button();
+            this.buttonCSVToVerseStructure = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -62,6 +63,36 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "URLボタン";
+            // 
+            // buttonDocument
+            // 
+            this.buttonDocument.Location = new System.Drawing.Point(233, 18);
+            this.buttonDocument.Name = "buttonDocument";
+            this.buttonDocument.Size = new System.Drawing.Size(107, 23);
+            this.buttonDocument.TabIndex = 2;
+            this.buttonDocument.Text = "使い方";
+            this.buttonDocument.UseVisualStyleBackColor = true;
+            this.buttonDocument.Click += new System.EventHandler(this.buttonDocument_Click);
+            // 
+            // buttonDiscord
+            // 
+            this.buttonDiscord.Location = new System.Drawing.Point(120, 18);
+            this.buttonDiscord.Name = "buttonDiscord";
+            this.buttonDiscord.Size = new System.Drawing.Size(107, 23);
+            this.buttonDiscord.TabIndex = 1;
+            this.buttonDiscord.Text = "Discord";
+            this.buttonDiscord.UseVisualStyleBackColor = true;
+            this.buttonDiscord.Click += new System.EventHandler(this.buttonDiscord_Click);
+            // 
+            // buttonGitHub
+            // 
+            this.buttonGitHub.Location = new System.Drawing.Point(7, 18);
+            this.buttonGitHub.Name = "buttonGitHub";
+            this.buttonGitHub.Size = new System.Drawing.Size(107, 23);
+            this.buttonGitHub.TabIndex = 0;
+            this.buttonGitHub.Text = "GitHub";
+            this.buttonGitHub.UseVisualStyleBackColor = true;
+            this.buttonGitHub.Click += new System.EventHandler(this.buttonGitHub_Click);
             // 
             // buttonOpenForumLeaning
             // 
@@ -88,6 +119,7 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.buttonCSVToVerseStructure);
             this.groupBox2.Controls.Add(this.buttonShowWinConvertTextAlignDuplicate);
             this.groupBox2.Controls.Add(this.buttonShowWinGetOutlinerActorLabel);
             this.groupBox2.Location = new System.Drawing.Point(12, 111);
@@ -143,46 +175,28 @@
             // ToolStripMenuItemDocument
             // 
             this.ToolStripMenuItemDocument.Name = "ToolStripMenuItemDocument";
-            this.ToolStripMenuItemDocument.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemDocument.Size = new System.Drawing.Size(114, 22);
             this.ToolStripMenuItemDocument.Text = "使い方";
             this.ToolStripMenuItemDocument.Click += new System.EventHandler(this.ToolStripMenuItemDocument_Click);
             // 
             // ToolStripMenuItemDiscord
             // 
             this.ToolStripMenuItemDiscord.Name = "ToolStripMenuItemDiscord";
-            this.ToolStripMenuItemDiscord.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItemDiscord.Size = new System.Drawing.Size(114, 22);
             this.ToolStripMenuItemDiscord.Text = "Discord";
             this.ToolStripMenuItemDiscord.Click += new System.EventHandler(this.ToolStripMenuItemDiscord_Click);
             // 
-            // buttonGitHub
+            // buttonCSVToVerseStructure
             // 
-            this.buttonGitHub.Location = new System.Drawing.Point(7, 18);
-            this.buttonGitHub.Name = "buttonGitHub";
-            this.buttonGitHub.Size = new System.Drawing.Size(107, 23);
-            this.buttonGitHub.TabIndex = 0;
-            this.buttonGitHub.Text = "GitHub";
-            this.buttonGitHub.UseVisualStyleBackColor = true;
-            this.buttonGitHub.Click += new System.EventHandler(this.buttonGitHub_Click);
-            // 
-            // buttonDiscord
-            // 
-            this.buttonDiscord.Location = new System.Drawing.Point(120, 18);
-            this.buttonDiscord.Name = "buttonDiscord";
-            this.buttonDiscord.Size = new System.Drawing.Size(107, 23);
-            this.buttonDiscord.TabIndex = 1;
-            this.buttonDiscord.Text = "Discord";
-            this.buttonDiscord.UseVisualStyleBackColor = true;
-            this.buttonDiscord.Click += new System.EventHandler(this.buttonDiscord_Click);
-            // 
-            // buttonDocument
-            // 
-            this.buttonDocument.Location = new System.Drawing.Point(233, 18);
-            this.buttonDocument.Name = "buttonDocument";
-            this.buttonDocument.Size = new System.Drawing.Size(107, 23);
-            this.buttonDocument.TabIndex = 2;
-            this.buttonDocument.Text = "使い方";
-            this.buttonDocument.UseVisualStyleBackColor = true;
-            this.buttonDocument.Click += new System.EventHandler(this.buttonDocument_Click);
+            this.buttonCSVToVerseStructure.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCSVToVerseStructure.Location = new System.Drawing.Point(7, 76);
+            this.buttonCSVToVerseStructure.Name = "buttonCSVToVerseStructure";
+            this.buttonCSVToVerseStructure.Size = new System.Drawing.Size(342, 23);
+            this.buttonCSVToVerseStructure.TabIndex = 2;
+            this.buttonCSVToVerseStructure.Text = "CSVからVerse構造体を作成する";
+            this.buttonCSVToVerseStructure.UseVisualStyleBackColor = true;
+            this.buttonCSVToVerseStructure.Click += new System.EventHandler(this.buttonCSVToVerseStructure_Click);
             // 
             // WinMain
             // 
@@ -220,6 +234,7 @@
         private System.Windows.Forms.Button buttonDiscord;
         private System.Windows.Forms.Button buttonGitHub;
         private System.Windows.Forms.Button buttonDocument;
+        private System.Windows.Forms.Button buttonCSVToVerseStructure;
     }
 }
 

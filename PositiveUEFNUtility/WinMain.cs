@@ -59,6 +59,12 @@ namespace PositiveUEFNUtility
             win.Show();
         }
 
+        private void buttonCSVToVerseStructure_Click(object sender, EventArgs e)
+        {
+            WinCSVToVerseStructure win = new WinCSVToVerseStructure();
+            win.Show();
+        }
+
         /// <summary>
         /// 使い方のForumページを開く
         /// </summary>
@@ -113,5 +119,7 @@ namespace PositiveUEFNUtility
             string url = "https://dev.epicgames.com/community/learning/tutorials/vw41/fortnite-positive-uefn-utility";
             PositiveUtility.OpenUrl(url);
         }
+
+
     }
 }
